@@ -1,0 +1,135 @@
+#intro {
+  height: calc(100vh - 4rem);
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.bg {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: calc(100vh - 4rem);
+  width: auto;
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  max-width: 600px;
+  width: 100%;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 200;
+}
+
+.text {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.name {
+  color: cadetblue;
+  font-weight: 700;
+}
+
+.para {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hiringIcon {
+  margin: 0 0.25rem;
+  height: 1.2rem;
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 1024px) {
+  .text {
+    font-size: 2.5rem;
+  }
+
+  .bg {
+    height: calc(100vh - 4rem);
+    right: -5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .bg {
+    height: 50vh;
+    top: unset;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+  }
+
+  .content {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hello {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .para {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .bg {
+    height: 40vh;
+    right: -20vw;
+    opacity: 0.3;
+  }
+}

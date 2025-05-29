@@ -1,0 +1,57 @@
+.navbar {
+  background-color: rgb(30, 30, 30);
+  height: 5rem;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  max-width: 85rem;
+  top: 0;
+  z-index: 3;
+  justify-content: space-between;
+}
+
+.logo {
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+}
+
+.menuItem {
+  margin: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: cadetblue;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid cadetblue;
+}
+
+.menuBtn {
+  background-color: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.menuIcon {
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+
+.active {
+  color: cadetblue;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid cadetblue;
+}
