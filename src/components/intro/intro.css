@@ -97,11 +97,12 @@
   }
 
   .bg {
-    height: 50vh;
-    top: unset;
-    bottom: 0;
-    right: 0;
-    opacity: 0.5;
+    height: 90vh; /* Increased from 50vh */
+  top: unset;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%); /* Center horizontally */
+  opacity: 0.5;
   }
 
   .content {
@@ -128,8 +129,9 @@
   }
 
   .bg {
-    height: 40vh;
-    right: -20vw;
+    height: 80vh;
+    right: 50%;
+    transform: translateX(50%); 
     opacity: 0.3;
   }
 }

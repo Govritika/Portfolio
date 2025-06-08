@@ -9,7 +9,6 @@ import linkedin from "../../assets/linkedin.png";
 import gmail from "../../assets/gmail.png";
 import whatsapp from "../../assets/whatsapp.png";
 
-
 import emailjs from "@emailjs/browser";
 
 
@@ -78,13 +77,13 @@ const Contact = () => {
             Submit
           </button>
           <div className="links">
-            <a href="mailto:vritikajangir@gmail.com">
+            <a href={`mailto:${import.meta.env.EMAIL}`}>
               <img src={gmail} alt="gmail" className="link" />
             </a>
-            <a href="mailto:vritikajangir@gmail.com">
+            <a href={`https://wa.me/${import.meta.env.WHATSAPP_NO}`}>
               <img src={whatsapp} alt="whatsapp" className="link" />
             </a>
-            <a href="https://github.com/Govritika">
+            <a href={`https://github.com/${import.meta.env.GITHUB_USERNAME}`}>
               <img src={Github} alt="github" className="link" />
             </a>
             <a href="https://www.linkedin.com/in/vritika-jangir-3a1616303/">

@@ -34,7 +34,7 @@ const Works = () => {
           <img src={Portfolio2} alt="Project 1" className="workImg" />
         </a>
         <a
-          href="https://github.com/yourusername/project1"
+          href="https://govritika.github.io/Portfolio/"
           target="_blank"
           rel="noopener noreferrer"
         >
