@@ -76,28 +76,29 @@ const Contact = () => {
           <button type="submit" value="Send" className="btn">
             Submit
           </button>
-          <div className="links">
-            <a href={`mailto:${import.meta.env.EMAIL}`}>
-              <img src={gmail} alt="gmail" className="link" />
-            </a>
-            <a href={`https://wa.me/${import.meta.env.WHATSAPP_NO}`}>
-              <img src={whatsapp} alt="whatsapp" className="link" />
-            </a>
-            <a href={`https://github.com/${import.meta.env.GITHUB_USERNAME}`}>
-              <img src={Github} alt="github" className="link" />
-            </a>
-            <a href="https://www.linkedin.com/in/vritika-jangir-3a1616303/">
-              <img src={linkedin} alt="linkedin" className="link" />
-            </a>
-            <a href="">
-              <img src={FacebookIcon} alt="facebook" className="link" />
-            </a>
-
-            <a href="">
-              <img src={TwitterIcon} alt="twitter" className="link" />
-            </a>
-          </div>
         </form>
+        
+        <div className="links">
+          <a href={`mailto:${import.meta.env.EMAIL}`}>
+            <img src={gmail} alt="gmail" className="link" />
+          </a>
+          <a href={`https://wa.me/${import.meta.env.WHATSAPP_NO}`}>
+            <img src={whatsapp} alt="whatsapp" className="link" />
+          </a>
+          <a href={`https://github.com/${import.meta.env.GITHUB_USERNAME}`}>
+            <img src={Github} alt="github" className="link" />
+          </a>
+          <a href="https://www.linkedin.com/in/vritika-jangir-3a1616303/">
+            <img src={linkedin} alt="linkedin" className="link" />
+          </a>
+          <a href="">
+            <img src={FacebookIcon} alt="facebook" className="link" />
+          </a>
+
+          <a href="">
+            <img src={TwitterIcon} alt="twitter" className="link" />
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -1,0 +1,106 @@
+.home-screen {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.glass-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+.profile{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(https://images.pexels.com/photos/1213447/pexels-photo-1213447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.enter {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enter:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* .status-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.clock {
+  font-weight: 500;
+} */
+
+.status-bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: 'SF Pro Display', sans-serif;
+  letter-spacing: 0.4px;
+  margin-top: 2rem;
+}
+
+.clock-time {
+  font-weight: 500;
+  font-size: 5rem;
+  text-transform: uppercase; 
+}
+
+.clock-date {
+  font-size: 1.5rem;
+  margin-top: 0.15rem;
+}
