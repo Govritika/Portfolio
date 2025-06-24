@@ -3,6 +3,8 @@ import "./intro.css";
 import bg from "../../assets/image.png";
 import { Link } from "react-scroll";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
+import { Typewriter } from "react-simple-typewriter";
+ 
 
 const Intro = () => {
   return (
@@ -14,8 +16,17 @@ const Intro = () => {
           Web Developer
         </span>
         <p className="para">
-          I am a skilled web developer with experience in creating <br />
-          user-friendly websites.
+          <Typewriter
+            words={[
+              "I am a skilled web developer with experience in creating user-friendly websites.",
+            ]}
+            loop={false}
+            cursor
+            cursorStyle="|"
+            typeSpeed={80}
+            deleteSpeed={80}
+            delaySpeed={1000}
+          />
         </p>
         <Link to="contactPage" smooth={true} duration={500}>
           <button className="btn flex items-center gap-2">
