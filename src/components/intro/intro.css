@@ -58,9 +58,9 @@
 }
 
 .btn {
-  background: rgba(255, 255, 255, 0.2); /* translucent white */
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  -webkit-backdrop-filter: blur(12px); 
   border: 1px solid rgba(255, 255, 255, 0.3);
 
   margin: 1rem 0;
